@@ -1,0 +1,68 @@
+*{
+    margin:0;
+    padding: 0;
+  
+}
+
+
+body{
+    background-color: rgb(226, 210, 189);
+    margin-bottom: 10px;
+    
+}
+.image{
+    height: 90%;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+   
+ 
+}
+
+.birds{
+    flex-basis:20%;
+    flex-grow: 1;
+    padding: 20px;
+    transition: 1s;
+    border: solid 2px white;
+    background-color: white;
+   
+ 
+}
+
+.birds p{
+    text-align: center;
+    margin-top: 10px;
+    font-size:20px;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+}
+
+.birds:hover{
+    transform:scale(0.9);
+}
+
+@media (max-width:900px){
+    .birds{
+        flex-basis:40%;
+    }
+}
+@media (max-width:500px){
+    .birds{
+        flex-basis:50%;
+    }
+}
